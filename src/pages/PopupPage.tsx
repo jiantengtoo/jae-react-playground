@@ -19,13 +19,13 @@ const PopupPage: React.FunctionComponent<ITemplateProps> = (props) => {
     <React.Fragment>
         <Grid>
             <TextField />
-            <button
+            <Button
             onClick={ () => {
                 setIsOpen((prevState) => { return !prevState; })
             } }
             >
             Open Modal
-            </button>
+            </Button>
         </Grid>
         { isOpen ? (
             <Draggable
