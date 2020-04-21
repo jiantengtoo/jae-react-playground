@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Test from './pages/Test';
 import SidebarPage from './pages/SidebarPage';
+import PopupPage from './pages/PopupPage';
 
 const styles = (theme: Theme) => ({
 });
@@ -38,12 +39,20 @@ const App: React.FunctionComponent<ITemplateProps> = (props) => {
             SidebarPage
           </Button>
         </Link>
+        <Link to="/popuppage">
+          <Button variant={'contained'}>
+            PopupPage
+          </Button>
+        </Link>
         <Switch>
           <Route path="/test">
             <Test />
           </Route>
           <Route path="/sidebarpage">
             <SidebarPage />
+          </Route>
+          <Route path="/popuppage">
+            <PopupPage />
           </Route>
         </Switch>
       </Router>
