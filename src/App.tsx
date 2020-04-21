@@ -8,7 +8,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Test from './components/Test';
+import Test from './pages/Test';
+import SidebarPage from './pages/SidebarPage';
 
 const styles = (theme: Theme) => ({
 });
@@ -32,9 +33,17 @@ const App: React.FunctionComponent<ITemplateProps> = (props) => {
             Test
           </Button>
         </Link>
+        <Link to="/sidebarpage">
+          <Button variant={'contained'}>
+            SidebarPage
+          </Button>
+        </Link>
         <Switch>
           <Route path="/test">
             <Test />
+          </Route>
+          <Route path="/sidebarpage">
+            <SidebarPage />
           </Route>
         </Switch>
       </Router>
