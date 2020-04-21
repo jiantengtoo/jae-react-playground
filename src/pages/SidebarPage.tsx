@@ -36,6 +36,7 @@ const SidebarPage: React.FunctionComponent<ITemplateProps> = (props) => {
   }
 
   console.log("EVAN")
+  console.log("ALVIN")
   return (
     <React.Fragment>
       <Grid container={ true } style={{ height: '500px', width: '500px', border: '1px solid', position: 'relative'}}>
