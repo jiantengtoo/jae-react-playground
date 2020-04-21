@@ -35,6 +35,7 @@ const SidebarPage: React.FunctionComponent<ITemplateProps> = (props) => {
     setEvan((prevState) => prevState = prevState + 1);
   }
 
+  console.log("EVAN")
   return (
     <React.Fragment>
       <Grid container={ true } style={{ height: '500px', width: '500px', border: '1px solid', position: 'relative'}}>
